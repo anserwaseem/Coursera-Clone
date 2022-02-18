@@ -1,0 +1,185 @@
+body {
+  font-family: OpenSans, Arial, sans-serif;
+}
+
+/*********************************** Header ***********************************/
+
+.main_header {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  font-size: medium;
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 10px;
+}
+
+.div_coursera {
+  color: #0056d2;
+  /* font-family: OpenSans, Arial, sans-serif; */
+  font-size: x-large;
+  margin: 5px;
+  margin-right: 20px;
+}
+
+.button_explore,
+.search_button,
+.join_button,
+.main_join_button {
+  background-color: #0056d2;
+  color: white;
+  /* margin-top: -2px; */
+  padding: 10px;
+  border: none;
+  border-radius: 4%;
+  margin-left: 0;
+}
+
+.button_explore {
+  padding: 0 20px;
+}
+
+.div_search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+.search_input {
+  border: 1px solid black;
+  margin-right: 0;
+}
+
+.div_navOthers,
+.div_login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  font-size: small;
+}
+
+.div_navOthers {
+  width: 50%;
+  left: 12.5em;
+}
+
+.div_no1,
+.div_no2,
+.div_no3,
+.div_no4 {
+  color: black;
+  display: flex;
+  margin: 0 10px;
+  text-decoration-line: none;
+}
+
+.div_no1:hover,
+.div_no2:hover,
+.div_no3:hover,
+.div_no4:hover {
+  color: #0056d2;
+  text-decoration-line: underline;
+}
+
+.div_login {
+  /* margin-left: 0px; */
+  color: lightskyblue;
+  left: 1em;
+  text-decoration-line: none;
+}
+
+.div_login:hover {
+  text-decoration-line: underline;
+}
+
+.join_button {
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 3em;
+  padding: 0 25px;
+}
+
+/*********************************** Main Section ***********************************/
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+}
+
+.div_main {
+  /* display: flex;
+  flex-direction: column; */
+  margin-left: 80px;
+  width: 45%;
+}
+
+.h1_main {
+  font-size: 4rem;
+}
+
+.p_main {
+  color: gray;
+  font-size: 1.25rem;
+}
+
+.main_join_button,
+.main_try_button {
+  font-size: inherit;
+  padding: 15px;
+}
+
+.main_try_button {
+  background-color: white;
+  color: #0056d2;
+  border: 2px solid #0056d2;
+  border-radius: 4%;
+  margin-left: 0;
+}
+
+.main_join_button:hover {
+  background-color: #06068d;
+}
+
+.main_try_button:hover {
+  background-color: #f3f8ff;
+}
+
+.div_main_img {
+  margin-left: 140px;
+  margin-top: -50px;
+}
+
+/*********************************** colab Section  ***********************************/
+
+.colab {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.a_colab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration-line: none;
+}
+
+.a_colab h1:nth-of-type(1) {
+  color: black;
+}
+
+.a_colab h1:nth-of-type(2) {
+  color: #0056d2;
+}
+
+.a_colab h1:nth-of-type(2):hover {
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: burlywood;
+  }
+}
