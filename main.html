@@ -10,24 +10,28 @@
   <body>
     <header class="main_header">
       <div class="div_coursera"><b>COURSERA</b></div>
-      <button class="button_explore">
-        <b>Explore</b>
-        <!-- <nav>
-          Explore
-          <h3>Goals</h3>
-          <ul>
-            <ol>
-              Take a Free Course
-            </ol>
-            <ol>
-              <a href="#">Earn a Degree</a>
-            </ol>
-            <ol>
-              <a href="#">Earn a Certificate</a>
-            </ol>
-          </ul>
-        </nav> -->
-      </button>
+      <div class="explore_dropdown">
+        <button href="#" class="explore_button">
+          <b>Explore</b><span class="arrow arrow-bottom"></span>
+        </button>
+        <div class="explore_dropdown_content">
+          <h2>Goals</h2>
+          <a href="#">Take a Free Course</a>
+          <a href="#">Earn a Degree</a>
+          <a href="#">Earn a Certificate</a>
+          <a href="#">Advance your career</a>
+          <a href="#">Find your new career</a>
+          <a href="#">Train your team</a>
+
+          <h2>Subjects</h2>
+          <a href="#">Data Science</a>
+          <a href="#">Business</a>
+          <a href="#">Computer Science</a>
+          <a href="#">Information Technology</a>
+          <a href="#">Language Learning</a>
+          <a href="#">Health</a>
+        </div>
+      </div>
       <div class="div_search">
         <input
           class="search_input"
@@ -35,6 +39,68 @@
           placeholder="What do you want to learn?"
         />
         <button class="search_button">S</button>
+        <div class="search_dropdown_content">
+          <h3>Most Popular Specializations</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="/images/Google_DA.png" alt="Google Data Analytics" />
+                <div>
+                  <p>Google Data Analytics</p>
+                  <p>Google</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/images/Google_PM.png"
+                  alt="Google Project Management"
+                />
+                <div>
+                  <p>Google Project Management</p>
+                  <p>Google</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/images/Google_UXD.png" alt="Google UX Design" />
+                <div>
+                  <p>Google UX Design</p>
+                  <p>Google</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h3>Popular right now</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="/images/Search_icon.png" alt="search icon" />
+                  <p>python</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="/images/Search_icon.png" alt="search icon" />
+                  <p>data science</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="/images/Search_icon.png" alt="search icon" />
+                  <p>machine learning</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="div_navOthers">
         <a class="div_no1" href="#">Online Degrees</a>
@@ -72,9 +138,31 @@
 
     <section class="colab">
       <a class="a_colab" href="#"
-        ><h1>We collaborate with&nbsp;</h1>
-        <h1>200+ leading universities and companies</h1></a
+        ><h2>We collaborate with&nbsp;</h2>
+        <h2>200+ leading universities and companies</h2></a
       >
+      <div class="div_colab_institutes">
+        <a href="#"><img src="/images/illinois.png" alt="illinois" /></a>
+        <a href="#"><img src="/images/duke.png" alt="illinois" /></a>
+        <a href="#"><img src="/images/google.png" alt="illinois" /></a>
+        <a href="#"><img src="/images/michigan.jpeg" alt="illinois" /></a>
+        <a href="#"><img src="/images/ibm.png" alt="illinois" /></a>
+        <a href="#"><img src="/images/imperial.png" alt="illinois" /></a>
+        <a href="#"><img src="/images/stanford.png" alt="illinois" /></a>
+        <a href="#"><img src="/images/penn.png" alt="illinois" /></a>
+      </div>
+    </section>
+
+    <section class="certificates">
+      <div class="div_certificates">
+        <h4>Professional Certificates</h4>
+        <h2>Get job-ready for an in-demand career</h2>
+        <p>
+          Break into a new field like information technology or data science. No
+          prior experience necessary to get started.
+        </p>
+      </div>
+      <div class="div_certificates_carousel"></div>
     </section>
   </body>
 </html>
