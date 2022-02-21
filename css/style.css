@@ -364,8 +364,9 @@ body {
 
 /*********************************** Certificates Section  ***********************************/
 
-/* .certificates {
-} */
+.certificates {
+  margin-left: 40px;
+}
 
 .div_certificates h4 {
   color: #382d8b;
@@ -383,4 +384,148 @@ body {
 .div_certificates p {
   color: #1f1f1f;
   font-size: 1.25rem;
+}
+
+/* .div_certificates_carousel {
+  display: flex;
+  flex-direction: row;
+} */
+
+.certificates_card {
+  /* display: inline; */
+  /* border-color: #bdbdbd;
+  box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12); */
+  margin-left: 30px;
+  /* height: 484px;
+  width: 268px;
+  background-image: url("/images/Google_UXD_person.png");
+  background-image: linear-gradient(135deg, rgb(0, 37, 93), rgb(0, 37, 93)); */
+}
+
+.certificates_card_img {
+  display: inline-block;
+  background-image: url("/images/Google_UXD_person.png");
+  height: 168px;
+  width: 268px;
+  background-size: 268px 168px;
+  z-index: 1;
+}
+
+.certificates_card_color_container {
+  overflow: hidden;
+  /* margin-top: -3rem; */
+}
+
+.certificates_card_color_parent {
+  transform: skewY(-10deg);
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+
+.certificates_card_color {
+  display: inline-block;
+  height: 384px;
+  width: 268px;
+  background-image: linear-gradient(135deg, rgb(0, 37, 93), rgb(0, 37, 93));
+  transform: skewY(10deg);
+  margin-top: -40px;
+  z-index: 2;
+  color: #fff;
+}
+
+.certificates_card_color_content {
+  display: inline-block;
+  margin-top: 90px;
+  margin-left: 22px;
+  z-index: 3;
+}
+
+.certificates_card_color_content div:nth-child(1) {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.certificates_card_color_content div:nth-child(2) {
+  color: #f5f7fa;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.certificates_card_color_content div:nth-child(3) {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-top: 110px;
+}
+
+.certificates_card_icon {
+  position: relative;
+  /* top: 1169px; */
+  margin-bottom: -200px;
+  bottom: 70px;
+  /* margin-top: -50px; */
+  left: 25px;
+  background-image: url(/images/G_icon.png);
+  width: 72px;
+  height: 72px;
+  background-size: 72px;
+  z-index: 3;
+}
+
+.certificates_card2 {
+  z-index: 4;
+  margin-left: 350px;
+  margin-top: -398px;
+}
+
+.certificates_card2_color_parent {
+  width: 1192px;
+}
+
+.certificates_card3 {
+  z-index: 5;
+  margin-left: 640px;
+  margin-top: -398px;
+}
+
+.certificates_card3_color_parent {
+  width: 1192px;
+}
+
+.certificates_card4 {
+  z-index: 6;
+  margin-left: 930px;
+  margin-top: -398px;
+}
+
+.certificates_card4_color_parent {
+  width: 1192px;
+}
+
+.div_carousel_left-arrow {
+  margin-top: -220px;
+  margin-left: -20px;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 20px;
+  height: 20px;
+  border-color: black;
+}
+
+.arrow-left {
+  transform: rotate(-135deg);
+}
+
+.div_carousel_right-arrow {
+  margin-top: -20px;
+  margin-left: 1200px;
+}
+
+.arrow-right {
+  transform: rotate(45deg);
 }
