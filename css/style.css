@@ -1,5 +1,6 @@
 body {
   font-family: OpenSans, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*********************************** Header ***********************************/
@@ -364,7 +365,19 @@ body {
 
 /*********************************** Certificates Section  ***********************************/
 
-.certificates {
+.certificates_cards_collection {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* overflow: hidden !important; */
+  /* width: 100%; */
+}
+
+.certificates_cards_collection:not(:nth-of-type(1)) {
+  display: none;
+}
+
+.div_certificates {
   margin-left: 40px;
 }
 
@@ -386,41 +399,56 @@ body {
   font-size: 1.25rem;
 }
 
-/* .div_certificates_carousel {
+#div_certificates_carousel {
   display: flex;
   flex-direction: row;
-} */
+  padding-left: 28px;
+}
+
+#div_certificates_carousel a {
+  cursor: pointer;
+  align-self: center;
+  height: fit-content;
+}
+
+#div_certificates_carousel>a:first-of-type {
+  opacity: 0;
+}
 
 .certificates_card {
   /* display: inline; */
-  /* border-color: #bdbdbd;
-  box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12); */
-  margin-left: 30px;
+  border-color: #bdbdbd;
+  box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+  margin-left: 15px;
   /* height: 484px;
-  width: 268px;
-  background-image: url("/images/Google_UXD_person.png");
+  width: 268px; */
+  /* background-image: url("/images/Google_UXD_person.png");
   background-image: linear-gradient(135deg, rgb(0, 37, 93), rgb(0, 37, 93)); */
+  /* height: 30%; */
+  /* width: 25%; */
+  overflow: hidden !important;
 }
 
 .certificates_card_img {
-  display: inline-block;
-  background-image: url("/images/Google_UXD_person.png");
+  /* display: inline-block; */
   height: 168px;
-  width: 268px;
-  background-size: 268px 168px;
+  width: 100%;
+  background-size: contain;
   z-index: 1;
 }
 
 .certificates_card_color_container {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* margin-top: -3rem; */
+  height: 200px;
 }
 
 .certificates_card_color_parent {
   transform: skewY(-10deg);
   overflow: hidden;
-  position: relative;
-  margin-top: 10px;
+  /* position: relative; */
+  margin-top: 115px;
+  /* height: 300px; */
 }
 
 .certificates_card_color {
@@ -442,67 +470,79 @@ body {
 }
 
 .certificates_card_color_content div:nth-child(1) {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin-top: 10px;
+  font-size: 1.1rem;
+  /* font-weight: 400; */
+  margin-top: 25px;
 }
 
 .certificates_card_color_content div:nth-child(2) {
   color: #f5f7fa;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 400;
   margin-top: 5px;
 }
 
 .certificates_card_color_content div:nth-child(3) {
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  margin-top: 110px;
+  margin-top: 60px;
+}
+
+.certificates_card_icon_background {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #e5e7e8;
+  border-radius: 3px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  margin-top: -58px;
+  margin-left: 16px;
 }
 
 .certificates_card_icon {
   position: relative;
   /* top: 1169px; */
   margin-bottom: -200px;
-  bottom: 70px;
+  bottom: 50px;
   /* margin-top: -50px; */
-  left: 25px;
-  background-image: url(/images/G_icon.png);
-  width: 72px;
-  height: 72px;
-  background-size: 72px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  border-radius: 2px;
   z-index: 3;
 }
 
-.certificates_card2 {
-  z-index: 4;
-  margin-left: 350px;
-  margin-top: -398px;
+#carousel_slides_dots {
+  /* color: #636363;
+  content: "\25CB";
+  visibility: visible;
+  position: absolute;
+  left: 2px;
+  display: block;
+  font-size: 16px;
+  width: 14px; */
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
 }
 
-.certificates_card2_color_parent {
-  width: 1192px;
+.dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 7px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* background-color: unset; */
+  /* transition: background-color 0.6s ease; */
 }
 
-.certificates_card3 {
-  z-index: 5;
-  margin-left: 640px;
-  margin-top: -398px;
-}
-
-.certificates_card3_color_parent {
-  width: 1192px;
-}
-
-.certificates_card4 {
-  z-index: 6;
-  margin-left: 930px;
-  margin-top: -398px;
-}
-
-.certificates_card4_color_parent {
-  width: 1192px;
+.dot:first-of-type {
+  background-color: #636363;
 }
 
 .div_carousel_left-arrow {
